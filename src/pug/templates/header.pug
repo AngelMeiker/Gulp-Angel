@@ -1,2 +1,42 @@
-.header__container 
-    
+- const languages = ['Español','English', 'Catalan', 'Gallego', 'Euskera']
+
+div
+    nav.navigation
+        div.nav-left
+            img(src="images/secura-insurance_logo.png", alt="placeholder").logo
+            ul.ul_menu_options
+                li 
+                    a(href="#").menu_options_link Inicio 
+                li 
+                    a(href="#").menu_options_link Próximos Renovaciones 
+        div.nav-right
+            ul.ul_menu_options
+                li#dropdown-profile-trigger
+                    span.icon-profile
+                    a(href="#").menu_options_link Mi Perfil
+                    span.icon-arrow 
+                    ul.dropdown-content
+                        li#profileExplained
+                            p Mi perfil 
+                            span En este espacio puedes acceder, modificar, gestionar y consultar todo lo relacionado con tus servicios de energía. Fácil y rápido.
+                        li.menu-item(data-section="profile")
+                            span.icon-profile
+                            a(href="#") Mis datos personales
+                        li.menu-item(data-section="password")
+                            span.icon-password 
+                            a(href="#") Mi contraseña
+                        li.menu-item(data-section="contact")
+                            span.icon-contact
+                            a(href="#") Contacto 
+                        li.menu-item(data-section="logout")
+                            span.icon-log-out 
+                            a(href="#") Cerrar Sesión 
+                li#dropdown-language-trigger
+                    span.icon-language
+                    a(href="#").menu_options_link Español
+                    span.icon-arrow
+                    ul.dropdown-content
+                        each item in languages  
+                            li
+                                a(href="#")= item   
+

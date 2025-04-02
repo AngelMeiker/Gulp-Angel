@@ -4,3 +4,18 @@
 @mixin toRem($property, $value, $base: 16px) {
     #{$property}: #{$value / $base}rem;
 }
+
+@mixin dropdowns($wth: 100px, $left:0){
+    display: none;
+    position: absolute;
+    width: $wth;
+    top: 150%;
+    left: $left;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 16px;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}

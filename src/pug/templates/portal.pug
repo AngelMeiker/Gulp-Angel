@@ -4,6 +4,7 @@ html(lang="es")
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(href="css/main.min.css" rel="stylesheet" media="all")
+		link(rel="stylesheet", href="")
 		link(rel="icon" href="images/favicon.png" sizes="32x32" type="image/png")
 		block head
 
@@ -21,8 +22,10 @@ html(lang="es")
 
 		main(id="main-content", class=mainClass)
 			block content
-
+				img(src="images/background.svg", alt="hero")
+						
 		footer(id="footer" class="footer")
 			include footer.pug
 
 		script(src="js/main.js")
+		

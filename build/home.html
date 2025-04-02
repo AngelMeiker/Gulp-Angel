@@ -4,12 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="">
     <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
     <title>Homepage</title>
   </head>
   <body>
     <header class="header" id="header">
-      <div class="header__container"> </div>
+      <div>
+        <nav class="navigation">
+          <div class="nav-left"><img class="logo" src="images/secura-insurance_logo.png" alt="placeholder">
+            <ul class="ul_menu_options">
+              <li> <a class="menu_options_link" href="#">Inicio </a></li>
+              <li> <a class="menu_options_link" href="#">Próximos Renovaciones </a></li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <ul class="ul_menu_options">
+              <li id="dropdown-profile-trigger"><span class="icon-profile"></span><a class="menu_options_link" href="#">Mi Perfil</a><span class="icon-arrow"> </span>
+                <ul class="dropdown-content">
+                  <li id="profileExplained">
+                    <p>Mi perfil </p><span>En este espacio puedes acceder, modificar, gestionar y consultar todo lo relacionado con tus servicios de energía. Fácil y rápido.</span>
+                  </li>
+                  <li class="menu-item" data-section="profile"><span class="icon-profile"></span><a href="#">Mis datos personales</a></li>
+                  <li class="menu-item" data-section="password"><span class="icon-password"> </span><a href="#">Mi contraseña</a></li>
+                  <li class="menu-item" data-section="contact"><span class="icon-contact"></span><a href="#">Contacto </a></li>
+                  <li class="menu-item" data-section="logout"><span class="icon-log-out"> </span><a href="#">Cerrar Sesión </a></li>
+                </ul>
+              </li>
+              <li id="dropdown-language-trigger"><span class="icon-language"></span><a class="menu_options_link" href="#">Español</a><span class="icon-arrow"></span>
+                <ul class="dropdown-content">
+                  <li><a href="#">Español</a></li>
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Catalan</a></li>
+                  <li><a href="#">Gallego</a></li>
+                  <li><a href="#">Euskera</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-content" id="main-content">
     </main>

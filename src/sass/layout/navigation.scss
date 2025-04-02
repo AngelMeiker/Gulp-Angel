@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: $fontRoboto;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navigation{
+    @extend %flex-center;
+    justify-content: space-between;
+    max-width: 1440px;
+    position: relative;
+    padding: 20px 50px;
+    margin: auto
+    
+}
+
+.nav-left{
+    @extend %flex-center;
+    font-weight: $fw-bold;
+    gap: 32px;
+
+}
+
+.ul_menu_options{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+    li{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .menu_options_link{
+        text-decoration: none;
+        color: $grey100;
+    }
+
+}
+
+.dropdown-content {
+    display: none; 
+
+    @include dropdowns(350px, -200%);
+
+    #dropdown-language-trigger & {
+        @include dropdowns(100px, 0);
+
+        li:hover{
+            background-color: $grey25;
+        }
+
+    }
+    #profileExplained {
+        display: flex;
+        flex-direction: column;
+        padding: 13px;
+        gap: 8px;
+        align-items: flex-start;
+        text-align: left;
+        color: $grey100;
+
+        p:first-child{
+            font-weight: $fw-bold;
+        }
+    }
+
+
+    li {
+        padding: 10px;
+        border-bottom: 1px solid $grey50;
+        a {
+            color: $grey100;
+            text-decoration: none;
+        }
+           
+    }
+    li:last-child {
+        border-bottom: none;     
+      }
+
+
+    .menu-item {
+    transition: background-color 0.3s ease;
+        
+        &:hover,
+        &.hover-active {
+            background-color: $grey25;
+            
+            &::before { // Barra azul
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background: $blue;
+                border-radius: 0 2px 2px 0;
+            }
+            
+            a, .icon-profile, .icon-password {
+                color: $blue;
+            }
+        }
+    }
+    
+}
