@@ -1,0 +1,161 @@
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: $fontRoboto;
+    box-sizing: border-box;
+    background-color: $page-bg;
+}
+
+#image-hero {
+    @extend %flex-center;
+    flex-direction: column;
+    position: relative;  
+    text-align: center;
+    justify-content: center;
+
+    img {
+        width: 100%;  
+        z-index: 1; 
+    }
+
+    h1{
+        @include text-img-hero(26%, 3em);
+        max-width: 500px;
+        font-weight: $fw-bold;
+    }
+
+    p {
+        @include text-img-hero(60%, 1.1em);
+       
+    }
+}
+
+#renovation-section {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); // 6 columnas
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 2rem 0;
+
+    h3 {
+        @extend %text-section;
+        grid-column: 1 / -1; // Ocupa todas las columnas
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+
+    .information-title-container {
+        grid-column: 1 / -1;
+        display: grid;
+        color:$subtleText;
+        grid-template-columns: repeat(6, 1fr); // Mismo número de columnas
+        gap: 10px;
+        padding: 10px;
+        border-bottom: 1px solid $grey50;
+    }
+
+    .data-container {
+        grid-column: 1 / -1;
+        display: grid;
+        gap: 10px;
+    }
+
+    .data-row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); // 6 columnas iguales
+        gap: 10px;
+        padding: 30px 0px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        .price{
+            font-weight: $fw-bold;
+        }
+        .data-waiting{
+            @extend %flex-center;
+            @include state-policy($waiting, $text);
+        }
+        
+        .data-paid{
+            @extend %flex-center;
+            @include state-policy($sucess, $paidText);
+        }
+        .text-state{
+            margin-left: 8px;
+        }  
+    }
+}
+
+#btn-see-all{
+    margin-top: 1rem;
+    background-color: $primary25;
+    color: $text;
+    border-style: none;
+    border-radius: 8px;
+    width: 45%;
+    padding: 10px 0px;
+}
+
+#client-section{
+    padding: 20px;
+    margin-top: 2rem;
+
+    h3{
+        @extend %text-section;
+        margin-bottom: 1.5rem;
+    }
+
+    .clients-container{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .client-card{
+        
+        background: $light;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        
+        .name {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+            
+            p{
+                margin-bottom: 0.5rem;
+                font-size: 24px;
+            }
+            span{
+                font-size: 14px;
+            }
+            
+        }
+        
+        .product {
+            color: $primary50;
+            margin-bottom: 1rem;
+        }
+        
+        .data-client {
+            @extend %flex-center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 3rem;
+            font-weight: $fw-bold;
+            
+            li {   
+                margin-bottom: 0.3rem;
+                margin-right: 2%;
+                color: $primary;
+            }
+        }
+    }
+}

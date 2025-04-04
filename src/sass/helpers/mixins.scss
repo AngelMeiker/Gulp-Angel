@@ -19,3 +19,21 @@
     padding: 10px 0;
     margin: 0;
 }
+
+@mixin text-img-hero($top:0%, $ft-size:1em){
+    position: absolute;
+    top: $top;
+    font-size: $ft-size;
+    z-index: 2;
+    color: $light;
+}
+
+@mixin state-policy($bc-color:$gray25, $tx-color:$ligth){
+    display: flex;
+    justify-content: center;
+    background-color: $bc-color;
+    color: $tx-color;
+    border-radius: 4px;
+    width: 80%;
+  
+}

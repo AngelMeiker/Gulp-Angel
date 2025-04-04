@@ -1,9 +1,71 @@
 extends layouts/layout-home
 
 block vars
-    - var pageTitle = "Homepage";
+    - var pageTitle = "Secura Insurance";
 
 block header
-    title Homepage
+    title Secura Insurance
     
 block content
+
+    - const infor_sec = ['No. de póliza', 'Nombre del Riesgo', 'Fecha de contrato', 'Fecha de vencimiento', 'Importe', 'Estado de la póliza']
+    - var data_place = ['75846843', 'Hyundai Ioniq', '01/12/2022', '01/12/2023', '30.203,76 €', 'Pagada']
+    - var n_client = 2;
+    - var n=0;
+
+    #image-hero
+        img(src="images/background.svg", alt="hero")
+        h1 Bienvenido a tu área de personal
+        p Gracias a ti más persona pueden disfruta de una vida más segura.
+
+    #renovation-section
+        h3 Próximas renovaciones
+        .information-title-container
+            each item in infor_sec
+                div= item
+        .data-container
+            .data-row
+                div= data_place[0]  
+                div= data_place[1]  
+                div= data_place[2]  
+                div= data_place[3] 
+                div.price= data_place[4]
+                div.data-waiting
+                    span.icon-waiting
+                    div.text-state Pendiente
+
+            while n < n_client
+                .data-row
+                    div= data_place[0]  
+                    div= data_place[1]  
+                    div= data_place[2]  
+                    div= data_place[3] 
+                    div.price= data_place[4] 
+                    .data-paid
+                        span.icon-check
+                        div.text-state=data_place[5]
+                - n++
+        
+        button#btn-see-all Ver todas
+            
+    #client-section 
+        h3 Clientes Potenciales
+        .clients-container
+            .client-card
+                .client-info
+                    .name
+                        p José Carlos Rodríguez
+                        span.icon-delete
+                    p.product Producto a ofrecer: Seguro de moto
+                ul.data-client
+                    li Email: jose.rod@gmail.com
+                    li Teléfono: +34 258 632 555
+            .client-card
+                .client-info
+                    .name
+                        p Ana Perffeti
+                        span.icon-delete
+                    p.product Producto a ofrecer: Seguro de Hogar
+                ul.data-client
+                    li Email: ana.per@gmail.com
+                    li Teléfono: +34 258 632 444

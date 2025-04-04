@@ -1,10 +1,3 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: $fontRoboto;
-    box-sizing: border-box;
-}
-
 .logo{
     width: 100px;
 }
@@ -15,6 +8,7 @@ body{
     max-width: 1440px;
     position: relative;
     padding: 20px 50px;
+    background-color: $light;
     margin: auto
     
 }
@@ -81,10 +75,12 @@ body{
         }
            
     }
+    li:first-child a {
+        font-weight: $fw-bold;
+    }
     li:last-child {
         border-bottom: none;     
       }
-
 
     .menu-item {
     transition: background-color 0.3s ease;
@@ -93,7 +89,7 @@ body{
         &.hover-active {
             background-color: $grey25;
             
-            &::before { // Barra azul
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -109,5 +105,4 @@ body{
             }
         }
     }
-    
 }

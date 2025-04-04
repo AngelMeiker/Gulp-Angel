@@ -6,46 +6,121 @@
     <link href="css/main.min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="">
     <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
-    <title>Homepage</title>
+    <title>Secura Insurance</title>
   </head>
   <body>
     <header class="header" id="header">
-      <div>
-        <nav class="navigation">
-          <div class="nav-left"><img class="logo" src="images/secura-insurance_logo.png" alt="placeholder">
-            <ul class="ul_menu_options">
-              <li> <a class="menu_options_link" href="#">Inicio </a></li>
-              <li> <a class="menu_options_link" href="#">Próximos Renovaciones </a></li>
-            </ul>
-          </div>
-          <div class="nav-right">
-            <ul class="ul_menu_options">
-              <li id="dropdown-profile-trigger"><span class="icon-profile"></span><a class="menu_options_link" href="#">Mi Perfil</a><span class="icon-arrow"> </span>
-                <ul class="dropdown-content">
-                  <li id="profileExplained">
-                    <p>Mi perfil </p><span>En este espacio puedes acceder, modificar, gestionar y consultar todo lo relacionado con tus servicios de energía. Fácil y rápido.</span>
-                  </li>
-                  <li class="menu-item" data-section="profile"><span class="icon-profile"></span><a href="#">Mis datos personales</a></li>
-                  <li class="menu-item" data-section="password"><span class="icon-password"> </span><a href="#">Mi contraseña</a></li>
-                  <li class="menu-item" data-section="contact"><span class="icon-contact"></span><a href="#">Contacto </a></li>
-                  <li class="menu-item" data-section="logout"><span class="icon-log-out"> </span><a href="#">Cerrar Sesión </a></li>
-                </ul>
-              </li>
-              <li id="dropdown-language-trigger"><span class="icon-language"></span><a class="menu_options_link" href="#">Español</a><span class="icon-arrow"></span>
-                <ul class="dropdown-content">
-                  <li><a href="#">Español</a></li>
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Catalan</a></li>
-                  <li><a href="#">Gallego</a></li>
-                  <li><a href="#">Euskera</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navigation">
+        <div class="nav-left"><img class="logo" src="images/secura-insurance_logo.png" alt="placeholder">
+          <ul class="ul_menu_options">
+            <li> <a class="menu_options_link" href="#">Inicio </a></li>
+            <li> <a class="menu_options_link" href="#">Próximos Renovaciones </a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul class="ul_menu_options">
+            <li id="dropdown-profile-trigger"><span class="icon-profile"></span><a class="menu_options_link" href="#">Mi Perfil</a><span class="icon-arrow"> </span>
+              <ul class="dropdown-content">
+                <li id="profileExplained">
+                  <p>Mi perfil </p><span>En este espacio puedes acceder, modificar, gestionar y consultar todo lo relacionado con tus servicios de energía. Fácil y rápido.</span>
+                </li>
+                <li class="menu-item" data-section="profile"><span class="icon-profile"></span><a href="#">Mis datos personales</a></li>
+                <li class="menu-item" data-section="password"><span class="icon-password"> </span><a href="#">Mi contraseña</a></li>
+                <li class="menu-item" data-section="contact"><span class="icon-contact"></span><a href="#">Contacto </a></li>
+                <li class="menu-item" data-section="logout"><span class="icon-log-out"> </span><a href="#">Cerrar Sesión </a></li>
+              </ul>
+            </li>
+            <li id="dropdown-language-trigger"><span class="icon-language"></span><a class="menu_options_link" href="#">Español</a><span class="icon-arrow"></span>
+              <ul class="dropdown-content">
+                <li><a href="#">Español</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Catalan</a></li>
+                <li><a href="#">Gallego</a></li>
+                <li><a href="#">Euskera</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="main-content" id="main-content">
+      <div id="image-hero"><img src="images/background.svg" alt="hero">
+        <h1>Bienvenido a tu área de personal</h1>
+        <p>Gracias a ti más persona pueden disfruta de una vida más segura.</p>
+      </div>
+      <div id="renovation-section">
+        <h3>Próximas renovaciones</h3>
+        <div class="information-title-container">
+          <div>No. de póliza</div>
+          <div>Nombre del Riesgo</div>
+          <div>Fecha de contrato</div>
+          <div>Fecha de vencimiento</div>
+          <div>Importe</div>
+          <div>Estado de la póliza</div>
+        </div>
+        <div class="data-container">
+          <div class="data-row">
+            <div>75846843</div>
+            <div>Hyundai Ioniq</div>
+            <div>01/12/2022</div>
+            <div>01/12/2023</div>
+            <div class="price">30.203,76 €</div>
+            <div class="data-waiting"><span class="icon-waiting"></span>
+              <div class="text-state">Pendiente</div>
+            </div>
+          </div>
+          <div class="data-row">
+            <div>75846843</div>
+            <div>Hyundai Ioniq</div>
+            <div>01/12/2022</div>
+            <div>01/12/2023</div>
+            <div class="price">30.203,76 €</div>
+            <div class="data-paid"><span class="icon-check"></span>
+              <div class="text-state">Pagada</div>
+            </div>
+          </div>
+          <div class="data-row">
+            <div>75846843</div>
+            <div>Hyundai Ioniq</div>
+            <div>01/12/2022</div>
+            <div>01/12/2023</div>
+            <div class="price">30.203,76 €</div>
+            <div class="data-paid"><span class="icon-check"></span>
+              <div class="text-state">Pagada</div>
+            </div>
+          </div>
+        </div>
+        <button id="btn-see-all">Ver todas</button>
+      </div>
+      <div id="client-section"> 
+        <h3>Clientes Potenciales</h3>
+        <div class="clients-container">
+          <div class="client-card">
+            <div class="client-info">
+              <div class="name">
+                <p>José Carlos Rodríguez</p><span class="icon-delete"></span>
+              </div>
+              <p class="product">Producto a ofrecer: Seguro de moto</p>
+            </div>
+            <ul class="data-client">
+              <li>Email: jose.rod@gmail.com</li>
+              <li>Teléfono: +34 258 632 555</li>
+            </ul>
+          </div>
+          <div class="client-card">
+            <div class="client-info">
+              <div class="name">
+                <p>Ana Perffeti</p><span class="icon-delete"></span>
+              </div>
+              <p class="product">Producto a ofrecer: Seguro de Hogar</p>
+            </div>
+            <ul class="data-client">
+              <li>Email: ana.per@gmail.com</li>
+              <li>Teléfono: +34 258 632 444</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer" id="footer">
       <div class="footer__container"></div>

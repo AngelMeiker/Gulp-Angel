@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?awbfp4');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?awbfp4#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?awbfp4') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?awbfp4') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?awbfp4##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xcmqk5');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xcmqk5#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?xcmqk5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?xcmqk5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?xcmqk5##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,44 +29,61 @@
 
 .icon-contact {
   &:before {
-    content: $icon-contact;
     @extend %icon-style;
+    content: $icon-contact; 
   }
 }
 .icon-bar {
   &:before {
-    content: $icon-bar;
-    @extend %icon-style;
+    content: $icon-bar; 
   }
 }
 .icon-arrow {
   &:before {
-    content: $icon-arrow; 
     @extend %icon-style;
+    content: $icon-arrow; 
   }
 }
 .icon-language {
   &:before {
-    content: $icon-language;
     @extend %icon-style;
+    content: $icon-language; 
   }
 }
 .icon-password {
   &:before {
-    content: $icon-password; 
     @extend %icon-style;
+    content: $icon-password; 
   }
 }
 .icon-log-out {
   &:before {
-    content: $icon-log-out; 
     @extend %icon-style;
+    content: $icon-log-out; 
   }
 }
 .icon-profile {
+  @extend %icon-style;
   &:before {
-    content: $icon-profile;
+    content: $icon-profile; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check;
+
+  }
+}
+.icon-waiting {
+  &:before {
+    content: $icon-waiting;
+
+  }
+}
+.icon-delete {
+  &:before {
     @extend %icon-style;
+    content: $icon-delete; 
   }
 }
 
