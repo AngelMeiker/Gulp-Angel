@@ -39,6 +39,7 @@ body{
     gap: 10px;
     padding: 20px;
     text-align: center;
+    align-items: center;
     margin: 2rem 0;
 
     h3 {
@@ -69,19 +70,19 @@ body{
         grid-template-columns: repeat(6, 1fr); // 6 columnas iguales
         gap: 10px;
         padding: 30px 0px;
-        background: white;
+        background: $light;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         .price{
             font-weight: $fw-bold;
         }
         .data-waiting{
-            @extend %flex-center;
             @include state-policy($waiting, $text);
+            
         }
         
         .data-paid{
-            @extend %flex-center;
+           
             @include state-policy($sucess, $paidText);
         }
         .text-state{
@@ -153,7 +154,7 @@ body{
             
             li {   
                 margin-bottom: 0.3rem;
-                margin-right: 2%;
+                margin-right: 80px;
                 color: $primary;
             }
         }

@@ -1,0 +1,52 @@
+.footer_container{
+    @extend %flex-center;
+    padding: 20px 50px;
+    background-color: $light;
+    justify-content: space-between;
+
+    .foot-help{
+        color: $primary;
+        font-weight: $fw-bold;
+    }
+
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+
+        .foot-email, .foot-phone{
+            display: flex;
+            padding: 5px 0px;
+
+            span{
+                margin-right: 10px;
+            }
+            
+        }
+    }
+
+    .foot-legal-information{
+        @extend %flex-center;
+        p:first-child{
+            border-left: none;
+            padding-left: 0px;
+        }
+        p{
+            border-left: 2px solid $grey50;
+            font-size: 10px;
+            padding: 0px 20px;
+        }
+    }
+    .foot-right{
+      
+        p{
+            padding: 15px 0px;
+        }
+        .foot-copyright{
+            border-left: none;
+            padding-right: 0px;
+            text-align: end;
+            font-size: 10px;
+        }
+    }
+}
